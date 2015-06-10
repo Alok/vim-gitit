@@ -1,0 +1,13 @@
+gitit.txt Plugin for Gitit wikis
+
+Author: Lincoln Mullen <http://lincolnmullen.com>
+License: MIT
+
+This plugin sets files with extension .page to be Markdown files in Vim, and it provides commands for working with a Gitit wiki.
+
+:GititCreatePage      Create a new page in the Gitit wiki. This command assumes 
+                      that your cursor is on a line containing a Markdown link. 
+                      The file that the link would go to will be created if it  
+                      does not already exist.
+
+ vim:tw=78:et:ft=help:norl:
