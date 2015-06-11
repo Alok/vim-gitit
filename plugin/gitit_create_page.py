@@ -7,7 +7,7 @@ try:
     import vim
     import re
     link = "\[(.+)\]\((.*)\)"
-    match = re.match(link, vim.current.line)
+    match = re.search(link, vim.current.line)
 
     if match:
         linktext = match.group(1)
