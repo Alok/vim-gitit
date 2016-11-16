@@ -1,5 +1,5 @@
 def create_file(text):
-    filename = text + ".page"
+    filename = text + ".md"
     print(filename)
     open(filename, "a").close()
 
@@ -11,7 +11,7 @@ try:
 
     if match:
         linktext = match.group(1)
-        filename = match.group(2) 
+        filename = match.group(2)
         if filename != "":
             create_file(filename)
         else:

@@ -4,7 +4,7 @@ import re
 try:
     category_to_add = vim.eval("a:category")
     cat_pattern = "categories: (.*)"
-    buffer_head = "\n".join(vim.current.buffer[0:6])
+    buffer_head = "\n".join(vim.current.buffer[:6])
     match = re.search(cat_pattern, buffer_head)
 
     if match:
